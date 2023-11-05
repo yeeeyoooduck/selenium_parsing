@@ -88,6 +88,11 @@ def get_mobchasti_prices_and_quantity(driver):
 
 
 def get_prices(link):
+    """
+    Определяет принадлежность ссылки.
+
+    return: Возвращает результат функции, зависящей от принадлежности ссылки
+    """
     if 'mobchasti' in link:
         result = get_mobchasti_prices_and_quantity(link)
         return result
